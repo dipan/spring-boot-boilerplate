@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 import java.util.List;
 
-@RestController("/visitor")
+@RestController("visitor")
 @RequestMapping(RestControllerV0.BASE_URL + "/visitor")
 public class VisitorController extends RestControllerV0 {
     @PostMapping
