@@ -1,11 +1,19 @@
 package com.trafficrecorder.trafficrecorder.api;
 
-public enum ResponseStatus {
-    OK {
+import org.json.JSONObject;
 
+public enum ResponseStatus {
+    SUCCESS {
+        @Override
+        public Integer statusCode() {
+            return 200;
+        }
     };
 
-    public int statusCode() {
-        return 0;
+    public JSONObject message() {
+        return null;
+    }
+    public Integer statusCode() {
+        return null;
     }
 }
